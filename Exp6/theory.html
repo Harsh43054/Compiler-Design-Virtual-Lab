@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compiler Design Virtual Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="menu-bar">
+      <div class="menu-icon" id="menuToggle">&#9776;</div>
+      <div class="logo">
+        <img src="../logo.jpg" alt="Virtual Labs Logo" />
+      </div>
+    </div>
+    <div class="orange-line"></div>
+    <h2 align="left" style="color:#4a90e2"><div class="section"><a href="#">Computer Science and Engineering</a> > <a href="../index.html">Compiler Design Virtual Lab</a> > <a href="../LOE.html">Experiments</a></div></h2>
+    <div class="grey-line"></div>
+  </header>
+  <main class="content">
+   <h1 align="center">LR Parsing Simulator</h1>
+  </main>
+  <div class="section">
+
+<h2>LR Parsing</h2>
+
+<p>
+LR Parsing is a powerful bottom-up parsing technique used in compiler design. It reads the input from Left to Right and constructs a Rightmost Derivation in reverse. LR parsers are widely used because they can handle a large class of context-free grammars efficiently and detect syntax errors accurately.
+</p>
+
+<h2>Components of an LR Parser</h2>
+
+<ul>
+<li><b>Input Buffer:</b> Contains the input string to be parsed.</li>
+<li><b>Stack:</b> Stores grammar symbols and parser states.</li>
+<li><b>ACTION Table:</b> Determines whether to Shift, Reduce, Accept, or report an Error.</li>
+<li><b>GOTO Table:</b> Specifies the next state after a reduction.</li>
+<li><b>Parser Driver:</b> Controls the parsing process using the parsing tables.</li>
+</ul>
+
+<h2>LR Parsing Actions</h2>
+
+<ul>
+<li><b>Shift:</b> Moves the next input symbol onto the stack and enters a new state.</li>
+<li><b>Reduce:</b> Applies a grammar production by replacing symbols on the stack with a non-terminal.</li>
+<li><b>Accept:</b> Indicates successful parsing of the input string.</li>
+<li><b>Error:</b> Indicates that the input string violates the grammar rules.</li>
+</ul>
+
+<h2>Working of LR Parsing</h2>
+
+<p>
+The parser repeatedly consults the ACTION table using the current state and input symbol. Based on the table entry, it performs a shift, reduce, accept, or error action. During reduction, the parser uses the GOTO table to determine the next state.
+</p>
+
+<h2>Types of LR Parsers</h2>
+
+<ul>
+<li><b>SLR (Simple LR)</b></li>
+<li><b>CLR (Canonical LR)</b></li>
+<li><b>LALR (Look-Ahead LR)</b></li>
+</ul>
+
+<h2>Advantages of LR Parsing</h2>
+
+<ul>
+<li>Handles a large class of grammars.</li>
+<li>Detects syntax errors efficiently.</li>
+<li>Suitable for automatic parser generation.</li>
+<li>Widely used in modern compiler construction.</li>
+</ul>
+
+<h2>Applications</h2>
+
+<ul>
+<li>Compiler Design</li>
+<li>Syntax Analysis</li>
+<li>Programming Language Processing</li>
+<li>Parser Generators such as YACC and Bison</li>
+<li>Source Code Validation</li>
+</ul>
+
+</div>
+</div>
+</div>
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <div class="modal-header">
+        <img src="../logo.jpg" alt="Logo" class="modal-logo"/>
+        <span class="close-btn" id="closeModal">&times;</span>
+      </div>
+      <ul class="modal-menu">
+        <li><a href=AO.html>Aim</a></li>
+        <li><a href=theory.html class="active">Theory</a></li>
+        <li><a href=quiz.html>Pretest</a></li>
+        <li><a href=pro.html>Procedure</a></li>
+        <li><a href=sim.html>Simulation</a></li>
+        <li><a href="postt.html">Posttest</a></li>
+        <li><a href=ref.html>References</a></li>
+        <li><a href=feed2.html>Feedback</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+

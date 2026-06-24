@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>LR Parsing Simulator</title>
+
+<link rel="stylesheet" href="simulation.css">
+
+<style>
+
+.box{
+display:inline-block;
+padding:12px 18px;
+margin:10px;
+border:2px solid #4a90e2;
+border-radius:10px;
+font-weight:bold;
+background:#f8fbff;
+min-width:180px;
+}
+
+.box.active{
+background:#4a90e2;
+color:white;
+transform:scale(1.05);
+}
+
+.parser{
+text-align:center;
+font-size:18px;
+line-height:2;
+}
+
+pre.active{
+background:#fff3cd;
+border-left:5px solid orange;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+LR Parsing Simulator
+</div>
+
+<div class="main-container">
+
+<div class="panel problem-panel">
+
+<div class="panel-header">
+Input String
+</div>
+
+<div class="panel-body">
+
+<select id="inputString">
+
+<option value="">
+-- Select Input --
+</option>
+
+<option value="id+id">
+id + id
+</option>
+
+<option value="id+id+id">
+id + id + id
+</option>
+
+</select>
+
+<div class="button-row">
+
+<button class="start" onclick="start()">Start</button>
+<button class="next" onclick="nextStep()">Next</button>
+<button class="reset" onclick="resetSim()">Reset</button>
+
+</div>
+
+</div>
+</div>
+
+<div class="panel step-panel">
+
+<div class="panel-header">
+Parsing Steps
+</div>
+
+<div class="panel-body" id="steps"></div>
+
+</div>
+
+<div class="panel result-panel">
+
+<div class="panel-header">
+LR Parser Visualization
+</div>
+
+<div class="panel-body">
+
+<div class="parser">
+
+<div id="stateBox" class="box">
+State
+</div>
+
+<div id="stackBox" class="box">
+Stack
+</div>
+
+<div id="actionBox" class="box">
+Action
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="ssc.js"></script>
+
+</body>
+</html>
