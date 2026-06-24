@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Token Recognition Explorer</title>
+<link rel="stylesheet" href="simulation.css">
+
+<style>
+.token{
+padding:12px;
+margin:8px;
+border:2px solid #4a90e2;
+border-radius:8px;
+display:inline-block;
+font-weight:bold;
+min-width:120px;
+text-align:center;
+}
+
+.token.active{
+background:#4a90e2;
+color:white;
+transform:scale(1.05);
+}
+
+#codeInput{
+width:100%;
+height:120px;
+font-size:16px;
+font-family:monospace;
+padding:10px;
+}
+
+pre.active{
+background:#fff3cd;
+border-left:5px solid orange;
+}
+
+#tokenBox{
+min-height:150px;
+padding:10px;
+border:2px dashed #999;
+border-radius:8px;
+margin-top:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+Token Recognition Explorer
+</div>
+
+<div class="main-container">
+
+<div class="panel problem-panel">
+<div class="panel-header">Source Code</div>
+
+<div class="panel-body">
+
+<textarea id="codeInput">
+int total = marks + 100;
+</textarea>
+
+<div class="button-row">
+<button class="start" onclick="start()">Start</button>
+<button class="next" onclick="nextStep()">Next</button>
+<button class="reset" onclick="resetSim()">Reset</button>
+</div>
+
+</div>
+</div>
+
+<div class="panel step-panel">
+<div class="panel-header">Recognition Steps</div>
+<div class="panel-body" id="steps"></div>
+</div>
+
+<div class="panel result-panel">
+<div class="panel-header">Recognized Tokens</div>
+<div class="panel-body">
+<div id="tokenBox"></div>
+</div>
+</div>
+
+</div>
+
+<script src="ssc.js"></script>
+
+</body>
+</html>
