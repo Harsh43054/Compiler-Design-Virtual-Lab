@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compiler Design Virtual Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="menu-bar">
+      <div class="menu-icon" id="menuToggle">&#9776;</div>
+      <div class="logo">
+        <img src="../logo.jpg" alt="Virtual Labs Logo" />
+      </div>
+    </div>
+    <div class="orange-line"></div>
+    <h2 align="left" style="color:#4a90e2"><div class="section"><a href="#">Computer Science and Engineering</a> > <a href="../index.html">Compiler Design Virtual Lab</a> > <a href="../LOE.html">Experiments</a></div></h2>
+    <div class="grey-line"></div>
+  </header>
+  <main class="content">
+   <h1 align="center">Shift Reduce Parser Simulator</h1>
+  </main>
+  <div class="section">
+
+<div class="section">
+
+<h2>Shift Reduce Parsing</h2>
+
+<p>
+Shift Reduce Parsing is a bottom-up parsing technique used in compiler design. It constructs the parse tree from leaves to root by repeatedly performing shift and reduce operations on an input string.
+</p>
+
+<h2>Operations in Shift Reduce Parsing</h2>
+
+<ul>
+<li><b>Shift:</b> Move the next input symbol from the input buffer to the stack.</li>
+<li><b>Reduce:</b> Replace a sequence of symbols (handle) on the stack with a non-terminal according to a grammar rule.</li>
+<li><b>Accept:</b> The input string is successfully parsed.</li>
+<li><b>Error:</b> No valid shift or reduce action exists.</li>
+</ul>
+
+<h2>Working Principle</h2>
+
+<p>
+The parser scans the input from left to right. Symbols are shifted onto the stack until a handle is found. The handle is then reduced using grammar productions. This process continues until the start symbol remains on the stack and the input is exhausted.
+</p>
+
+<h2>Applications</h2>
+
+<ul>
+<li>Syntax Analysis in Compilers</li>
+<li>LR Parsing Techniques</li>
+<li>SLR Parsers</li>
+<li>LALR Parsers</li>
+<li>Programming Language Processing</li>
+</ul>
+
+</div>
+</div>
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <div class="modal-header">
+        <img src="../logo.jpg" alt="Logo" class="modal-logo"/>
+        <span class="close-btn" id="closeModal">&times;</span>
+      </div>
+      <ul class="modal-menu">
+        <li><a href=AO.html>Aim</a></li>
+        <li><a href=theory.html class="active">Theory</a></li>
+        <li><a href=quiz.html>Pretest</a></li>
+        <li><a href=pro.html>Procedure</a></li>
+        <li><a href=sim.html>Simulation</a></li>
+        <li><a href="postt.html">Posttest</a></li>
+        <li><a href=ref.html>References</a></li>
+        <li><a href=feed2.html>Feedback</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
