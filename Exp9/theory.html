@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compiler Design Virtual Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="menu-bar">
+      <div class="menu-icon" id="menuToggle">&#9776;</div>
+      <div class="logo">
+        <img src="../logo.jpg" alt="Virtual Labs Logo" />
+      </div>
+    </div>
+    <div class="orange-line"></div>
+    <h2 align="left" style="color:#4a90e2"><div class="section"><a href="#">Computer Science and Engineering</a> > <a href="../index.html">Compiler Design Virtual Lab</a> > <a href="../LOE.html">Experiments</a></div></h2>
+    <div class="grey-line"></div>
+  </header>
+  <main class="content">
+   <h1 align="center">Three Address Code Generator</h1>
+  </main>
+  <div class="section">
+    <div class="section">
+
+<h2>Three Address Code (TAC)</h2>
+
+<p>
+Three Address Code is a commonly used intermediate code representation in compilers. Each TAC instruction contains at most three addresses: two operands and one result.
+</p>
+
+<h2>Purpose of TAC</h2>
+
+<ul>
+<li>Simplifies complex expressions.</li>
+<li>Facilitates code optimization.</li>
+<li>Acts as an intermediate representation between source code and machine code.</li>
+<li>Helps in target code generation.</li>
+</ul>
+
+<h2>General Form</h2>
+
+<pre>
+x = y op z
+</pre>
+
+where:
+<ul>
+<li>x → result</li>
+<li>y, z → operands</li>
+<li>op → operator</li>
+</ul>
+
+<h2>Example</h2>
+
+<pre>
+Expression:
+a + b * c
+
+Three Address Code:
+
+t1 = b * c
+t2 = a + t1
+</pre>
+
+<h2>Types of TAC Statements</h2>
+
+<ul>
+<li>Assignment Statements</li>
+<li>Binary Operations</li>
+<li>Unary Operations</li>
+<li>Conditional Jumps</li>
+<li>Unconditional Jumps</li>
+<li>Procedure Calls</li>
+</ul>
+
+<h2>Applications</h2>
+
+<ul>
+<li>Intermediate Code Generation</li>
+<li>Compiler Optimization</li>
+<li>Code Translation</li>
+<li>Machine Code Generation</li>
+</ul>
+
+</div>
+</div>
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <div class="modal-header">
+        <img src="../logo.jpg" alt="Logo" class="modal-logo"/>
+        <span class="close-btn" id="closeModal">&times;</span>
+      </div>
+      <ul class="modal-menu">
+        <li><a href=AO.html>Aim</a></li>
+        <li><a href=theory.html class="active">Theory</a></li>
+        <li><a href=quiz.html>Pretest</a></li>
+        <li><a href=pro.html>Procedure</a></li>
+        <li><a href=sim.html>Simulation</a></li>
+        <li><a href="postt.html">Posttest</a></li>
+        <li><a href=ref.html>References</a></li>
+        <li><a href=feed2.html>Feedback</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
