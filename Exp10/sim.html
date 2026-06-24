@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Code Optimization Simulator</title>
+<link rel="stylesheet" href="simulation.css">
+
+<style>
+.code-box{
+    background:#f8f9fa;
+    border:2px solid #4a90e2;
+    border-radius:8px;
+    padding:15px;
+    margin-top:10px;
+    font-family:monospace;
+    font-size:16px;
+    white-space:pre-line;
+}
+
+.highlight{
+    background:#fff3cd;
+    border-left:5px solid orange;
+    padding:8px;
+    margin-top:5px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+Code Optimization Simulator
+</div>
+
+<div class="main-container">
+
+    <!-- Input Panel -->
+    <div class="panel problem-panel">
+        <div class="panel-header">Optimization Example</div>
+
+        <div class="panel-body">
+
+            <select id="program">
+                <option value="">-- Select Example --</option>
+
+                <option value="constfold">
+                    Constant Folding
+                </option>
+
+                <option value="commonsub">
+                    Common Subexpression Elimination
+                </option>
+
+                <option value="deadcode">
+                    Dead Code Elimination
+                </option>
+            </select>
+
+            <div class="button-row">
+                <button class="start" onclick="start()">Start</button>
+                <button class="next" onclick="nextStep()">Next</button>
+                <button class="reset" onclick="resetSim()">Reset</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Steps Panel -->
+    <div class="panel step-panel">
+        <div class="panel-header">Optimization Steps</div>
+
+        <div class="panel-body" id="steps">
+            Select an optimization example and click Start.
+        </div>
+    </div>
+
+    <!-- Result Panel -->
+    <div class="panel result-panel">
+        <div class="panel-header">Optimized Code</div>
+
+        <div class="panel-body">
+
+            <div id="originalCode" class="code-box">
+Original code will appear here.
+            </div>
+
+            <div id="optimizedCode" class="code-box">
+Optimized code will appear here.
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="ssc.js"></script>
+
+</body>
+</html>

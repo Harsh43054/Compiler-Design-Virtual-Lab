@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compiler Design Virtual Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="menu-bar">
+      <div class="menu-icon" id="menuToggle">&#9776;</div>
+      <div class="logo">
+        <img src="../logo.jpg" alt="Virtual Labs Logo" />
+      </div>
+    </div>
+    <div class="orange-line"></div>
+    <h2 align="left" style="color:#4a90e2"><div class="section"><a href="#">Computer Science and Engineering</a> > <a href="../index.html">Compiler Design Virtual Lab</a> > <a href="../LOE.html">Experiments</a></div></h2>
+    <div class="grey-line"></div>
+  </header>
+  <main class="content">
+   <h1 align="center">Code Optimization Simulator </h1>
+  </main>
+  <div class="section">
+
+<div class="section">
+
+<h2>Code Optimization</h2>
+
+<p>
+Code Optimization is a phase of the compiler that improves the intermediate code generated after semantic analysis without changing the meaning or output of the program. The primary objective is to produce efficient code that executes faster and uses fewer resources.
+</p>
+
+<h2>Need for Code Optimization</h2>
+
+<ul>
+<li>Reduce execution time of programs.</li>
+<li>Minimize memory usage.</li>
+<li>Eliminate redundant computations.</li>
+<li>Improve overall program performance.</li>
+<li>Generate efficient target code.</li>
+</ul>
+
+<h2>Types of Code Optimization</h2>
+
+<ul>
+<li><b>Machine Independent Optimization:</b> Optimization performed on intermediate code without considering the target machine architecture.</li>
+
+<li><b>Machine Dependent Optimization:</b> Optimization performed based on the characteristics of the target machine.</li>
+</ul>
+
+<h2>Common Optimization Techniques</h2>
+
+<h3>1. Constant Folding</h3>
+<p>
+Constant expressions are evaluated during compilation rather than at runtime.
+</p>
+
+<pre>
+Before:
+a = 10 * 20
+
+After:
+a = 200
+</pre>
+
+<h3>2. Constant Propagation</h3>
+<p>
+Known constant values are substituted directly into expressions.
+</p>
+
+<pre>
+Before:
+a = 10
+b = a + 5
+
+After:
+a = 10
+b = 15
+</pre>
+
+<h3>3. Common Subexpression Elimination</h3>
+<p>
+Repeated calculations are identified and computed only once.
+</p>
+
+<pre>
+Before:
+t1 = a + b
+t2 = a + b
+
+After:
+t1 = a + b
+t2 = t1
+</pre>
+
+<h3>4. Dead Code Elimination</h3>
+<p>
+Statements that do not affect the final output are removed.
+</p>
+
+<pre>
+Before:
+x = 10
+x = 20
+
+After:
+x = 20
+</pre>
+
+<h3>5. Copy Propagation</h3>
+<p>
+Copies of variables are replaced directly by their original values.
+</p>
+
+<pre>
+Before:
+a = b
+c = a + 5
+
+After:
+c = b + 5
+</pre>
+
+<h2>Advantages of Code Optimization</h2>
+
+<ul>
+<li>Faster execution of programs.</li>
+<li>Reduced memory requirements.</li>
+<li>Efficient utilization of CPU resources.</li>
+<li>Improved performance of compiled code.</li>
+<li>Better overall system efficiency.</li>
+</ul>
+
+<h2>Applications</h2>
+
+<ul>
+<li>Compiler Design</li>
+<li>Embedded Systems</li>
+<li>Operating Systems</li>
+<li>High Performance Computing</li>
+<li>Real-Time Applications</li>
+</ul>
+
+</div>
+
+</div>
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <div class="modal-header">
+        <img src="../logo.jpg" alt="Logo" class="modal-logo"/>
+        <span class="close-btn" id="closeModal">&times;</span>
+      </div>
+      <ul class="modal-menu">
+        <li><a href=AO.html>Aim</a></li>
+        <li><a href=theory.html class="active">Theory</a></li>
+        <li><a href=quiz.html>Pretest</a></li>
+        <li><a href=pro.html>Procedure</a></li>
+        <li><a href=sim.html>Simulation</a></li>
+        <li><a href="postt.html">Posttest</a></li>
+        <li><a href=ref.html>References</a></li>
+        <li><a href=feed2.html>Feedback</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
