@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Symbol Table Manager</title>
+<link rel="stylesheet" href="simulation.css">
+
+<style>
+.table-box{
+margin-top:15px;
+overflow-x:auto;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:10px;
+text-align:center;
+}
+
+th{
+background:#4a90e2;
+color:white;
+}
+
+.highlight{
+background:#fff3cd;
+font-weight:bold;
+}
+
+.log{
+background:#f8f9fa;
+padding:10px;
+border-radius:8px;
+min-height:120px;
+font-size:15px;
+line-height:1.8;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+Symbol Table Manager
+</div>
+
+<div class="main-container">
+
+<div class="panel problem-panel">
+<div class="panel-header">Symbol Entry</div>
+
+<div class="panel-body">
+
+<input type="text" id="identifier"
+placeholder="Identifier Name">
+
+<select id="datatype">
+<option value="int">int</option>
+<option value="float">float</option>
+<option value="char">char</option>
+<option value="function">function</option>
+</select>
+
+<select id="operation">
+<option value="insert">Insert</option>
+<option value="search">Search</option>
+<option value="delete">Delete</option>
+</select>
+
+<div class="button-row">
+<button class="start" onclick="start()">Start</button>
+<button class="next" onclick="nextStep()">Next</button>
+<button class="reset" onclick="resetSim()">Reset</button>
+</div>
+
+</div>
+</div>
+
+<div class="panel step-panel">
+<div class="panel-header">Operation Log</div>
+<div class="panel-body">
+<div id="steps" class="log">
+Select an operation and click Start.
+</div>
+</div>
+</div>
+
+<div class="panel result-panel">
+<div class="panel-header">Symbol Table</div>
+<div class="panel-body">
+
+<div class="table-box">
+
+<table id="symbolTable">
+<thead>
+<tr>
+<th>Identifier</th>
+<th>Type</th>
+<th>Scope</th>
+</tr>
+</thead>
+
+<tbody id="tableBody">
+
+<tr>
+<td>x</td>
+<td>int</td>
+<td>Global</td>
+</tr>
+
+<tr>
+<td>sum</td>
+<td>function</td>
+<td>Global</td>
+</tr>
+
+</tbody>
+</table>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+<script src="ssc.js"></script>
+
+</body>
+</html>

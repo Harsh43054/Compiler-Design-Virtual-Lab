@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compiler Design Virtual Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="menu-bar">
+      <div class="menu-icon" id="menuToggle">&#9776;</div>
+      <div class="logo">
+        <img src="../logo.jpg" alt="Virtual Labs Logo" />
+      </div>
+    </div>
+    <div class="orange-line"></div>
+    <h2 align="left" style="color:#4a90e2"><div class="section"><a href="#">Computer Science and Engineering</a> > <a href="../index.html">Compiler Design Virtual Lab</a> > <a href="../LOE.html">Experiments</a></div></h2>
+    <div class="grey-line"></div>
+  </header>
+  <main class="content">
+   <h1 align="center">Symbol Table Manager</h1>
+</main>
+
+<div class="section">
+
+<div class="section">
+
+<h2>Pointers in C++</h2>
+
+<p>
+A pointer is a special variable that stores the memory address of another variable. Pointers provide direct access to memory locations and are widely used in dynamic memory management, data structures, and efficient program execution.
+</p>
+
+<h2>Pointer Declaration</h2>
+
+<p>
+A pointer is declared using the <b>*</b> operator. The pointer stores the address of a variable of a specific data type.
+</p>
+
+<pre>
+int x = 10;
+int *ptr = &x;
+</pre>
+
+<p>
+Here, <b>ptr</b> stores the memory address of variable <b>x</b>.
+</p>
+
+<h2>Dereferencing</h2>
+
+<p>
+Dereferencing is the process of accessing the value stored at the memory address pointed to by a pointer using the <b>*</b> operator.
+</p>
+
+<pre>
+cout << *ptr;
+</pre>
+
+<p>
+This statement displays the value stored in variable <b>x</b>.
+</p>
+
+<h2>Dynamic Memory Allocation</h2>
+
+<p>
+Dynamic memory allocation allows memory to be allocated during program execution rather than at compile time. C++ uses the <b>new</b> operator for allocating memory dynamically.
+</p>
+
+<pre>
+int *ptr = new int;
+</pre>
+
+<p>
+The memory is allocated from the heap and its address is stored in the pointer.
+</p>
+
+<h2>Memory Deallocation</h2>
+
+<p>
+Memory allocated using <b>new</b> should be released using the <b>delete</b> operator to prevent memory leaks.
+</p>
+
+<pre>
+delete ptr;
+</pre>
+
+<h2>Dynamic Arrays</h2>
+
+<p>
+C++ also allows dynamic allocation of arrays.
+</p>
+
+<pre>
+int *arr = new int[5];
+delete[] arr;
+</pre>
+
+<h2>Advantages of Dynamic Memory Allocation</h2>
+
+<ul>
+<li>Efficient memory utilization.</li>
+<li>Memory can be allocated as needed.</li>
+<li>Supports dynamic data structures.</li>
+<li>Improves program flexibility.</li>
+<li>Allows runtime memory management.</li>
+</ul>
+
+<h2>Applications</h2>
+
+<ul>
+<li>Linked Lists</li>
+<li>Stacks and Queues</li>
+<li>Trees and Graphs</li>
+<li>Dynamic Arrays</li>
+<li>Memory Management Systems</li>
+</ul>
+
+</div>
+
+</div>
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <div class="modal-header">
+        <img src="../logo.jpg" alt="Logo" class="modal-logo"/>
+        <span class="close-btn" id="closeModal">&times;</span>
+      </div>
+      <ul class="modal-menu">
+        <li><a href=AO.html>Aim</a></li>
+        <li><a href=theory.html class="active">Theory</a></li>
+        <li><a href=quiz.html>Pretest</a></li>
+        <li><a href=pro.html>Procedure</a></li>
+        <li><a href=sim.html>Simulation</a></li>
+        <li><a href="postt.html">Posttest</a></li>
+        <li><a href=ref.html>References</a></li>
+        <li><a href=feed2.html>Feedback</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
